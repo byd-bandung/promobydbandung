@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BYD Bandung &amp; Cimahi — PT BIPO Teknologi Otomotif | Sales Imam</title>
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* Base typography and clean light palette */
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #FFFFFF;
+      color: #1E293B;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, .font-display {
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    }
+
+    /* Blinking / pulsing active notification dot animation */
+    @keyframes notif-blink {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.25;
+        transform: scale(0.82);
+      }
+    }
+
+    @keyframes notif-ping {
+      0% {
+        opacity: 0.85;
+        transform: scale(0.95);
+      }
+      75%, 100% {
+        opacity: 0;
+        transform: scale(2.15);
+      }
+    }
+
+    .notif-dot-blink {
+      animation: notif-blink 1.25s ease-in-out infinite;
+    }
+
+    .notif-dot-ping {
+      animation: notif-ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .notif-dot-blink,
+      .notif-dot-ping {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-[#FACC15] selection:text-slate-900">
+
+  <!-- Non-blocking Toast Message Box -->
+  <div id="toast-box" role="status" aria-live="polite" class="fixed top-5 right-5 z-50 hidden max-w-sm rounded-2xl border border-cyan-300 bg-white px-4 py-3 text-xs sm:text-sm font-semibold text-slate-800 shadow-lg">
+    <span id="toast-message"></span>
+  </div>
+
+  <!-- Floating Green WhatsApp Button ("Ambil Promo Sekarang!") with Active Blinking Notification Dot -->
+  <a id="floating-wa-btn" href="https://wa.me/6282315011610?text=Halo%20Kang%20Imam%20BYD%20BIPO%20Cimahi%2C%20saya%20mau%20Ambil%20Promo%20Sekarang!%20Mohon%20info%20promo%20Cash%2C%20Kredit%2C%20Trade-In%20Terima%20Semua%20Merk%2C%20Bunga%200%25%2C%20Cash%20Bertahap%2C%20Tenor%201-8%20Tahun%20dan%20Diskon%20Special." target="_blank" rel="noopener noreferrer" aria-label="Ambil Promo Sekarang via WhatsApp Kang Imam" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 inline-flex items-center gap-2.5 rounded-full border-2 border-green-300 bg-[#16A34A] px-4 py-3 sm:px-5 sm:py-3.5 text-xs sm:text-sm font-extrabold text-white shadow-xl hover:bg-green-700 hover:-translate-y-0.5 active:translate-y-0 transition-all">
+    <!-- Blinking Active Notification Indicator Dot -->
+  <!-- Floating Green WhatsApp Button ("Ambil Promo") with Active Blinking Notification Dot -->
+  <a id="floating-wa-btn" href="https://wa.me/6282315011610?text=Halo%20Kang%20Imam%20BYD%20BIPO%20Cimahi%2C%20saya%20mau%20Ambil%20Promo%20Sekarang!%20Mohon%20info%20promo%20Cash%2C%20Kredit%2C%20Trade-In%20Terima%20Semua%20Merk%2C%20Bunga%200%25%2C%20Cash%20Bertahap%2C%20Tenor%201-8%20Tahun%20dan%20Diskon%20Special." target="_blank" rel="noopener noreferrer" aria-label="Ambil Promo Sekarang via WhatsApp Kang Imam" class="fixed bottom-4 right-4 sm:bottom-5 sm:right-5 z-40 inline-flex items-center gap-2 rounded-full border border-green-300 bg-[#16A34A] px-3.5 py-2.5 sm:px-4 sm:py-2.5 text-xs font-bold text-white shadow-lg hover:bg-green-700 hover:-translate-y-0.5 active:translate-y-0 transition-all">
+    <!-- Blinking Active Notification Indicator Dot -->
+    <span class="relative flex h-2.5 w-2.5 shrink-0 items-center justify-center" aria-hidden="true">
+      <span class="notif-dot-ping absolute inline-flex h-full w-full rounded-full bg-[#FACC15]"></span>
+      <span class="notif-dot-blink relative inline-flex h-2 w-2 rounded-full border border-slate-900/25 bg-[#FACC15]"></span>
+    </span>
+    <svg class="h-4 w-4 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.763.461 3.482 1.338 5.002L2 22l5.164-1.355a9.927 9.927 0 004.867 1.242h.004c5.515 0 9.969-4.454 9.969-9.969 0-2.664-1.038-5.169-2.922-7.053A9.914 9.914 0 0012.031 2zm5.825 14.212c-.244.687-1.417 1.314-1.951 1.398-.503.079-1.155.113-1.865-.113-.43-.137-.983-.319-1.69-.624-2.972-1.283-4.913-4.274-5.062-4.472-.149-.198-1.217-1.618-1.217-3.086 0-1.468.769-2.189 1.042-2.487.273-.298.596-.372.794-.372.198 0 .397.002.571.01.183.009.429-.07.671.512.248.596.844 2.059.918 2.208.074.149.124.323.025.521-.099.198-.149.323-.298.496-.149.174-.313.388-.447.521-.149.149-.304.311-.131.609.174.298.772 1.273 1.657 2.062 1.138 1.015 2.097 1.329 2.395 1.478.298.149.472.124.646-.074.174-.198.745-.868.943-1.166.198-.298.397-.248.67-.149.273.099 1.737.819 2.035.968.298.149.496.223.571.347.074.124.074.72-.17 1.407z" />
+    </svg>
+    <span>Ambil Promo</span>
+  </a>
+
+  <!-- 1. HEADER & NAVIGASI KATEGORI MENU -->
+  <header class="sticky top-0 z-30 border-b border-slate-200 bg-white/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+      <!-- Brand / Dealer Identity -->
+      <a href="#beranda" class="flex items-center gap-2.5 min-w-0">
+        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-cyan-300 bg-gradient-to-br from-[#06B6D4] to-cyan-600 font-display text-sm font-extrabold text-white shadow-sm">
+          BYD
+        </span>
+        <div class="truncate">
+          <p class="font-display text-sm sm:text-base font-extrabold tracking-tight text-slate-900 truncate">
+            BYD BANDUNG <span class="rounded-md bg-[#FACC15] px-1.5 py-0.5 text-[10px] font-extrabold text-slate-900">BIPO CIMAHI</span>
+          </p>
+          <p class="text-[11px] font-medium text-slate-500 truncate">PT BIPO Teknologi Otomotif</p>
+        </div>
+      </a>
+
+      <!-- Desktop Menu & Categories -->
+      <nav aria-label="Navigasi Utama" class="hidden xl:flex items-center gap-5 text-xs font-bold text-slate-700">
+        <a href="#promo" class="hover:text-[#06B6D4] transition-colors">Promo</a>
+        <a href="#harga-unit" class="hover:text-[#06B6D4] transition-colors">Daftar Harga &amp; Unit</a>
+        <a href="#simulasi-kredit" class="hover:text-[#06B6D4] transition-colors">Simulasi Kredit</a>
+        <a href="#test-drive" class="hover:text-[#06B6D4] transition-colors">Test Drive</a>
+        <a href="#testimoni" class="hover:text-[#06B6D4] transition-colors">Testimoni</a>
+        <a href="#lokasi-dealer" class="hover:text-[#06B6D4] transition-colors">Lokasi Dealer</a>
+      </nav>
+
+      <!-- Desktop Green WhatsApp CTA + Mobile Menu Toggle -->
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="https://wa.me/6282315011610?text=Halo%20Kang%20Imam%20BYD%20BIPO%20Cimahi%2C%20saya%20ingin%20konsultasi%20promo%20dan%20harga%20BYD%20Bandung." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 rounded-xl bg-[#16A34A] px-3.5 py-2 text-xs font-bold text-white shadow-sm hover:bg-green-700 transition-colors">
+          <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.763.461 3.482 1.338 5.002L2 22l5.164-1.355a9.927 9.927 0 004.867 1.242h.004c5.515 0 9.969-4.454 9.969-9.969 0-2.664-1.038-5.169-2.922-7.053A9.914 9.914 0 0012.031 2zm5.825 14.212c-.244.687-1.417 1.314-1.951 1.398-.503.079-1.155.113-1.865-.113-.43-.137-.983-.319-1.69-.624-2.972-1.283-4.913-4.274-5.062-4.472-.149-.198-1.217-1.618-1.217-3.086 0-1.468.769-2.189 1.042-2.487.273-.298.596-.372.794-.372.198 0 .397.002.571.01.183.009.429-.07.671.512.248.596.844 2.059.918 2.208.074.149.124.323.025.521-.099.198-.149.323-.298.496-.149.174-.313.388-.447.521-.149.149-.304.311-.131.609.174.298.772 1.273 1.657 2.062 1.138 1.015 2.097 1.329 2.395 1.478.298.149.472.124.646-.074.174-.198.745-.868.943-1.166.198-.298.397-.248.67-.149.273.099 1.737.819 2.035.968.298.149.496.223.571.347.074.124.074.72-.17 1.407z" />
+          </svg>
+          <span>WhatsApp Imam</span>
+        </a>
+        <button id="mobile-menu-btn" type="button" aria-label="Buka Menu Navigasi" class="inline-flex xl:hidden items-center justify-center rounded-xl border border-slate-200 bg-[#F4F6F9] p-2.5 text-slate-800 hover:bg-cyan-50 transition-colors">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Category Quick Bar (Desktop & Mobile) -->
+    <div class="border-t border-slate-100 bg-[#F4F6F9]/80">
+      <div class="mx-auto flex max-w-7xl items-center gap-2 overflow-x-auto px-4 py-2 sm:px-6 lg:px-8 text-[11px] font-bold">
+        <span class="shrink-0 text-slate-500">Kategori:</span>
+        <a href="#harga-unit" data-quick-cat="Semua" class="quick-cat-link shrink-0 rounded-full bg-white border border-slate-200 px-3 py-1 text-slate-700 hover:border-cyan-400 hover:text-cyan-700 transition-colors">Semua Unit</a>
+        <a href="#harga-unit" data-quick-cat="MPV & Hybrid DM" class="quick-cat-link shrink-0 rounded-full bg-white border border-slate-200 px-3 py-1 text-slate-700 hover:border-cyan-400 hover:text-cyan-700 transition-colors">MPV &amp; Hybrid DM</a>
+        <a href="#harga-unit" data-quick-cat="Compact & City EV" class="quick-cat-link shrink-0 rounded-full bg-white border border-slate-200 px-3 py-1 text-slate-700 hover:border-cyan-400 hover:text-cyan-700 transition-colors">Compact &amp; City EV</a>
+        <a href="#harga-unit" data-quick-cat="SUV & Crossover EV" class="quick-cat-link shrink-0 rounded-full bg-white border border-slate-200 px-3 py-1 text-slate-700 hover:border-cyan-400 hover:text-cyan-700 transition-colors">SUV &amp; Crossover EV</a>
+        <a href="#harga-unit" data-quick-cat="Sedan EV" class="quick-cat-link shrink-0 rounded-full bg-white border border-slate-200 px-3 py-1 text-slate-700 hover:border-cyan-400 hover:text-cyan-700 transition-colors">Sedan EV</a>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden xl:hidden border-t border-slate-200 bg-white px-4 py-4 space-y-3">
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs font-semibold text-slate-700">
+        <a href="#promo" class="mobile-nav-link rounded-xl bg-[#F4F6F9] px-3 py-2.5 hover:bg-cyan-50">Promo</a>
+        <a href="#harga-unit" class="mobile-nav-link rounded-xl bg-[#F4F6F9] px-3 py-2.5 hover:bg-cyan-50">Daftar Harga &amp; Unit</a>
+        <a href="#simulasi-kredit" class="mobile-nav-link rounded-xl bg-[#F4F6F9] px-3 py-2.5 hover:bg-cyan-50">Simulasi Kredit</a>
+        <a href="#test-drive" class="mobile-nav-link rounded-xl bg-[#F4F6F9] px-3 py-2.5 hover:bg-cyan-50">Test Drive</a>
+        <a href="#testimoni" class="mobile-nav-link rounded-xl bg-[#F4F6F9] px-3 py-2.5 hover:bg-cyan-50">Testimoni</a>
+        <a href="#lokasi-dealer" class="mobile-nav-link rounded-xl bg-[#F4F6F9] px-3 py-2.5 hover:bg-cyan-50">Lokasi Dealer</a>
+      </div>
+      <a href="https://wa.me/6282315011610?text=Halo%20Kang%20Imam%20BYD%20BIPO%20Cimahi%2C%20saya%20ingin%20konsultasi%20promo%20BYD%20Bandung." target="_blank" rel="noopener noreferrer" class="flex w-full items-center justify-center gap-2 rounded-xl bg-[#16A34A] px-4 py-2.5 text-xs font-bold text-white hover:bg-green-700 transition-colors">
+        <span>WhatsApp Sales Imam (082315011610)</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION & PROFIL BESAR SALES KONSULTAN IMAM -->
+  <section id="beranda" class="bg-gradient-to-b from-[#F4F6F9] via-white to-white py-10 sm:py-14">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-6 space-y-5">
+          <div class="inline-flex flex-wrap items-center gap-2">
+            <span class="rounded-full bg-[#FACC15] px-3 py-1 text-xs font-extrabold text-slate-900">
+              BYD Bandung &amp; Bandung Raya
+            </span>
+            <span class="rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs font-bold text-cyan-800">
+              BYD BIPO Cimahi
+            </span>
+          </div>
+
+          <h1 class="font-display text-3xl sm:text-4xl lg:text-[42px] font-extrabold leading-tight tracking-tight text-slate-900">
+            Solusi Kendaraan BYD Bandung &amp; Cimahi dengan <span class="text-[#06B6D4]">Promo Fleksibel</span>
+          </h1>
+
+          <p class="text-sm sm:text-base leading-relaxed text-slate-600">
+            Dapatkan penawaran terbaik untuk lini kendaraan BYD melalui <strong class="font-semibold text-slate-900">PT BIPO Teknologi Otomotif — BYD BIPO Cimahi</strong>. Tersedia skema Cash, Kredit, Trade-In Terima Semua Merk, Bunga 0%, Cash Bertahap, Tenor Panjang 1 s/d 8 Tahun, dan Diskon Special.
+          </p>
+
+          <!-- Main Action Buttons (Green WhatsApp Button Prominent) -->
+          <div class="flex flex-wrap items-center gap-3 pt-1">
+            <a href="https://wa.me/6282315011610?text=Halo%20Kang%20Imam%20BYD%20BIPO%20Cimahi%2C%20saya%20ingin%20konsultasi%20promo%20spesial%20dan%20harga%20BYD%20Bandung." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-2xl bg-[#16A34A] px-5 py-3.5 text-xs sm:text-sm font-bold text-white shadow-sm hover:bg-green-700 transition-colors">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.763.461 3.482 1.338 5.002L2 22l5.164-1.355a9.927 9.927 0 004.867 1.242h.004c5.515 0 9.969-4.454 9.969-9.969 0-2.664-1.038-5.169-2.922-7.053A9.914 9.914 0 0012.031 2zm5.825 14.212c-.244.687-1.417 1.314-1.951 1.398-.503.079-1.155.113-1.865-.113-.43-.137-.983-.319-1.69-.624-2.972-1.283-4.913-4.274-5.062-4.472-.149-.198-1.217-1.618-1.217-3.086 0-1.468.769-2.189 1.042-2.487.273-.298.596-.372.794-.372.198 0 .397.002.571.01.183.009.429-.07.671.512.248.596.844 2.059.918 2.208.074.149.124.323.025.521-.099.198-.149.323-.298.496-.149.174-.313.388-.447.521-.149.149-.304.311-.131.609.174.298.772 1.273 1.657 2.062 1.138 1.015 2.097 1.329 2.395 1.478.298.149.472.124.646-.074.174-.198.745-.868.943-1.166.198-.298.397-.248.67-.149.273.099 1.737.819 2.035.968.298.149.496.223.571.347.074.124.074.72-.17 1.407z" />
+              </svg>
+              <span>WhatsApp Imam (082315011610)</span>
+            </a>
+            <a href="#harga-unit" class="rounded-2xl bg-[#06B6D4] px-5 py-3.5 text-xs sm:text-sm font-bold text-white shadow-sm hover:bg-cyan-600 transition-colors">
+              Lihat Harga &amp; Unit
+            </a>
+            <a href="#test-drive" class="rounded-2xl border border-yellow-400 bg-[#FACC15] px-5 py-3.5 text-xs sm:text-sm font-bold text-slate-900 hover:bg-yellow-300 transition-colors">
+              Booking Test Drive
+            </a>
+          </div>
+
+          <!-- Highlight Quick Summary -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs">
+            <div class="rounded-2xl border border-slate-200 bg-white p-3.5">
+              <p class="font-extrabold text-[#06B6D4]">Tenor 1–8 Tahun</p>
+              <p class="text-slate-600 mt-0.5">Kredit &amp; Bunga 0% tersedia</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-3.5">
+              <p class="font-extrabold text-[#EF4444]">Trade-In Semua Merk</p>
+              <p class="text-slate-600 mt-0.5">Tukar tambah praktis</p>
+            </div>
+            <div class="col-span-2 sm:col-span-1 rounded-2xl border border-slate-200 bg-white p-3.5">
+              <p class="font-extrabold text-amber-600">Cash Bertahap</p>
+              <p class="text-slate-600 mt-0.5">&amp; Diskon Special</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Spacious Sales Consultant Profile Card -->
+        <div class="lg:col-span-6">
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-7 shadow-sm space-y-5">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-6 border-b border-slate-100 pb-6">
+              <!-- Large Sales Consultant Profile Image Frame -->
+              <div class="w-full md:w-64 lg:w-72 shrink-0 space-y-2.5">
+                <div class="relative h-64 sm:h-72 w-full overflow-hidden rounded-3xl border-2 border-[#FACC15] bg-gradient-to-br from-cyan-50 via-[#F4F6F9] to-yellow-50 shadow-sm">
+                  <img id="imam-profile-img" src="https://placehold.co/440x480/06B6D4/FFFFFF?text=IMAM%0ABYD+BIPO+CIMAHI" alt="Foto Profil Sales Konsultan Imam BYD BIPO Cimahi" onerror="this.onerror=null;this.src='https://placehold.co/440x480/06B6D4/FFFFFF?text=IMAM';" class="h-full w-full object-cover object-top" />
+                </div>
+                <label class="flex w-full cursor-pointer items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-[#F4F6F9] px-3 py-2 text-xs font-bold text-slate-700 hover:bg-cyan-50 transition-colors">
+                  <span>Ganti Foto Profil Imam</span>
+                  <input id="imam-photo-input" type="file" accept="image/*" class="hidden" />
+                </label>
+              </div>
+
+              <div class="text-center md:text-left min-w-0 flex-1 space-y-2.5">
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-2">
+                  <span class="inline-block rounded-full bg-cyan-50 border border-cyan-200 px-3 py-0.5 text-[11px] font-bold text-cyan-800">
+                    Sales Konsultan Resmi
+                  </span>
+                  <span class="inline-block rounded-full bg-[#FACC15] px-2.5 py-0.5 text-[11px] font-extrabold text-slate-900">
+                    Bandung &amp; Cimahi
+                  </span>
+                </div>
+                <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-slate-900">IMAM</h2>
+                <p class="text-xs sm:text-sm font-semibold text-slate-700">PT BIPO Teknologi Otomotif — BYD BIPO Cimahi</p>
+                <p class="text-xs leading-relaxed text-slate-600">
+                  Pendampingan konsultasi pembelian BYD secara menyeluruh: Cash, Kredit, Trade-In Terima Semua Merk, Bunga 0%, Cash Bertahap, Tenor 1–8 Tahun, Diskon Special, dan Test Drive.
+                </p>
+              </div>
+            </div>
+
+            <div class="rounded-2xl bg-[#F4F6F9] p-4 sm:p-5 space-y-2 text-xs sm:text-sm text-slate-700">
+              <p><strong class="text-slate-900">WhatsApp Konsultan:</strong> <span class="font-extrabold text-[#16A34A]">0823-1501-1610</span></p>
+              <p><strong class="text-slate-900">Dealer:</strong> Jl. Jend. H. Amir Machmud No. 52, Cibereum, Kec. Cimahi Selatan, Kota Cimahi, Jawa Barat 40535</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              <a href="https://wa.me/6282315011610?text=Halo%20Kang%20Imam%2C%20saya%20ingin%20tanya%20promo%20dan%20simulasi%20kredit%20BYD%20Bandung." target="_blank" rel="noopener noreferrer" class="sm:col-span-2 flex items-center justify-center gap-1.5 rounded-xl bg-[#16A34A] px-4 py-3 text-xs sm:text-sm font-bold text-white hover:bg-green-700 transition-colors">
+                <span>Chat WhatsApp Imam</span>
+              </a>
+              <a href="#test-drive" class="flex items-center justify-center rounded-xl border border-yellow-400 bg-[#FACC15] px-4 py-3 text-xs sm:text-sm font-bold text-slate-900 hover:bg-yellow-300 transition-colors">
+                Test Drive
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. KOLOM PROMOSI DENGAN IKON SVG BERWARNA -->
+  <section id="promo" class="border-t border-slate-200 bg-white py-12 sm:py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-8">
+        <div>
+          <span class="rounded-full bg-[#FACC15] px-3 py-1 text-[11px] font-extrabold uppercase tracking-wider text-slate-900">
+            Penawaran Unggulan
+          </span>
+          <h2 class="mt-2 font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
+            Program Promo BYD Bandung &amp; Cimahi
+          </h2>
+          <p class="mt-1 text-xs sm:text-sm text-slate-600">
+            Kemudahan pembelian tunai maupun pembiayaan dengan beragam opsi promo menarik.
+          </p>
+        </div>
+        <a href="#simulasi-kredit" class="self-start sm:self-auto rounded-xl border border-cyan-300 bg-cyan-50 px-4 py-2 text-xs font-bold text-cyan-900 hover:bg-cyan-100 transition-colors">
+          Hitung Cicilan →
+        </a>
+      </div>
+
+      <div id="promo-grid" class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. KATALOG UNIT & HARGA LENGKAP (KOLOM GAMBAR UNIT BESAR & PREVIEW FOTO) -->
+  <section id="harga-unit" class="border-t border-slate-200 bg-[#F4F6F9] py-12 sm:py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="rounded-full bg-[#06B6D4] px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
+            Daftar Harga Resmi &amp; Spesifikasi
+          </span>
+          <h2 class="mt-2 font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
+            Katalog Unit &amp; Tipe BYD
+          </h2>
+          <p class="mt-1 text-xs sm:text-sm text-slate-600">
+            Pilih kategori di bawah ini atau klik simulasi kredit untuk menghitung estimasi cicilan 1–8 tahun.
+          </p>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div id="category-filters" class="flex flex-wrap gap-2">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+
+      <div id="catalog-grid" class="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <!-- Populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SIMULASI KREDIT INTERAKTIF (1 s/d 8 TAHUN, DP & DISKON, TANPA RATE BUNGA) -->
+  <section id="simulasi-kredit" class="border-t border-slate-200 bg-white py-12 sm:py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mb-8">
+        <span class="rounded-full bg-[#FACC15] px-3 py-1 text-[11px] font-extrabold uppercase tracking-wider text-slate-900">
+          Kalkulator Cicilan (1 s/d 8 Tahun)
+        </span>
+        <h2 class="mt-2 font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
+          Simulasi Kredit BYD
+        </h2>
+        <p class="mt-1 text-xs sm:text-sm text-slate-600">
+          Pilih unit/tipe, atur DP (%) atau nominal DP, masukkan diskon spesial (opsional), dan pilih tenor 1 hingga 8 tahun.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-12">
+        <!-- Input Controls -->
+        <div class="lg:col-span-7 rounded-3xl border border-slate-200 bg-[#F4F6F9] p-5 sm:p-7 space-y-5">
+          <div>
+            <label for="sim-unit" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+              1. Pilih Unit &amp; Tipe Kendaraan
+            </label>
+            <select id="sim-unit" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-xs sm:text-sm font-semibold text-slate-900 focus:border-[#06B6D4] focus:outline-none">
+              <!-- Populated by JavaScript -->
+            </select>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <label for="sim-dp-percent" class="text-xs font-bold uppercase tracking-wider text-slate-700">
+                  2. DP (%)
+                </label>
+                <span id="sim-dp-percent-label" class="rounded-md bg-[#FACC15] px-2 py-0.5 text-xs font-extrabold text-slate-900">20%</span>
+              </div>
+              <input id="sim-dp-percent" type="range" min="10" max="70" step="5" value="20" class="w-full accent-[#06B6D4] cursor-pointer" />
+              <div class="mt-1 flex justify-between text-[11px] text-slate-500">
+                <span>10%</span>
+                <span>40%</span>
+                <span>70%</span>
+              </div>
+            </div>
+
+            <div>
+              <label for="sim-dp-nominal" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                Atau Nominal DP (Rp)
+              </label>
+              <input id="sim-dp-nominal" type="number" min="0" step="1000000" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-xs sm:text-sm font-bold text-slate-900 focus:border-[#06B6D4] focus:outline-none" />
+            </div>
+          </div>
+
+          <div>
+            <label for="sim-discount" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+              Diskon Special (Rp — Opsional)
+            </label>
+            <input id="sim-discount" type="number" min="0" step="1000000" value="0" placeholder="Contoh: 10000000" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-xs sm:text-sm font-bold text-slate-900 focus:border-[#06B6D4] focus:outline-none" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+              3. Pilih Tenor (1 s/d 8 Tahun)
+            </label>
+            <div id="sim-tenor-buttons" class="grid grid-cols-4 sm:grid-cols-8 gap-2">
+              <!-- Populated by JavaScript (1 to 8 years) -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Simulation Output Card -->
+        <div class="lg:col-span-5 rounded-3xl border border-cyan-200 bg-gradient-to-b from-cyan-50/70 to-white p-5 sm:p-7 shadow-sm flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between gap-2">
+              <span class="rounded-full bg-[#06B6D4] px-3 py-1 text-[11px] font-bold text-white">
+                Estimasi Simulasi
+              </span>
+              <span id="sim-badge-tenor" class="rounded-full bg-[#FACC15] px-3 py-1 text-[11px] font-extrabold text-slate-900">
+                5 Tahun (60 Bln)
+              </span>
+            </div>
+
+            <div>
+              <p class="text-xs text-slate-500">Unit Terpilih</p>
+              <p id="sim-out-unit" class="font-display text-base sm:text-lg font-extrabold text-slate-900">-</p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-white p-4">
+              <p class="text-xs font-semibold text-slate-500">Estimasi Angsuran / Bulan</p>
+              <p id="sim-out-monthly" class="mt-1 font-display text-2xl sm:text-3xl font-extrabold text-[#EF4444]">Rp 0</p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 text-xs">
+              <div class="rounded-xl border border-slate-200 bg-white p-3">
+                <p class="text-slate-500">Harga OTR</p>
+                <p id="sim-out-otr" class="mt-0.5 font-bold text-slate-900">Rp 0</p>
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white p-3">
+                <p class="text-slate-500">Harga Setelah Diskon</p>
+                <p id="sim-out-net" class="mt-0.5 font-bold text-cyan-800">Rp 0</p>
+              </div>
+              <div class="col-span-2 rounded-xl border border-slate-200 bg-white p-3">
+                <p class="text-slate-500">Total DP (Estimasi)</p>
+                <p id="sim-out-dp" class="mt-0.5 font-bold text-slate-900">Rp 0</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-2 pt-2">
+            <a id="sim-wa-link" href="https://wa.me/6282315011610" target="_blank" rel="noopener noreferrer" class="flex w-full items-center justify-center rounded-2xl bg-[#16A34A] px-5 py-3.5 text-xs sm:text-sm font-bold text-white hover:bg-green-700 transition-colors">
+              Kirim Simulasi ke WhatsApp Imam
+            </a>
+            <p class="text-[11px] text-center text-slate-500">
+              Angka simulasi bersifat perkiraan awal. Hubungi Kang Imam untuk penawaran resmi &amp; promo aktif.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FORM TEST DRIVE LENGKAP -->
+  <section id="test-drive" class="border-t border-slate-200 bg-[#F4F6F9] py-12 sm:py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-12 items-start">
+        <div class="lg:col-span-5 space-y-4">
+          <span class="rounded-full bg-[#06B6D4] px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
+            Test Drive BYD Bandung
+          </span>
+          <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
+            Form Test Drive BYD Bandung &amp; Cimahi
+          </h2>
+          <p class="text-xs sm:text-sm leading-relaxed text-slate-600">
+            Lengkapi form Test Drive di samping untuk mengatur sesi Test Drive unit BYD bersama Sales Konsultan <strong class="text-slate-900">IMAM</strong>. Data Test Drive akan otomatis dikirimkan ke WhatsApp <strong class="text-[#16A34A]">0823-1501-1610</strong>.
+          </p>
+          <div class="rounded-2xl border border-slate-200 bg-white p-4 text-xs text-slate-700 space-y-2">
+            <p class="font-bold text-slate-900">Lokasi &amp; Area Test Drive:</p>
+            <p>• Dealer BYD BIPO Cimahi (Jl. Jend. H. Amir Machmud No. 52)</p>
+            <p>• Area Bandung, Cimahi &amp; sekitarnya (sesuai konfirmasi jadwal Test Drive)</p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 rounded-3xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm">
+          <form id="test-drive-form" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="td-nama" class="block text-xs font-bold text-slate-700 mb-1">
+                  Nama Peserta Test Drive *
+                </label>
+                <input id="td-nama" type="text" required placeholder="Masukkan nama lengkap" class="w-full rounded-xl border border-slate-300 bg-[#F4F6F9]/60 px-4 py-2.5 text-sm text-slate-900 focus:border-[#06B6D4] focus:bg-white focus:outline-none" />
+              </div>
+              <div>
+                <label for="td-hp" class="block text-xs font-bold text-slate-700 mb-1">
+                  No. HP / WhatsApp Test Drive *
+                </label>
+                <input id="td-hp" type="tel" required placeholder="Contoh: 0812xxxxxxxx" class="w-full rounded-xl border border-slate-300 bg-[#F4F6F9]/60 px-4 py-2.5 text-sm text-slate-900 focus:border-[#06B6D4] focus:bg-white focus:outline-none" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="td-domisili" class="block text-xs font-bold text-slate-700 mb-1">
+                  Domisili / Lokasi Test Drive *
+                </label>
+                <input id="td-domisili" type="text" required placeholder="Contoh: Cimahi Selatan / Bandung" class="w-full rounded-xl border border-slate-300 bg-[#F4F6F9]/60 px-4 py-2.5 text-sm text-slate-900 focus:border-[#06B6D4] focus:bg-white focus:outline-none" />
+              </div>
+              <div>
+                <label for="td-unit" class="block text-xs font-bold text-slate-700 mb-1">
+                  Unit Test Drive Pilihan *
+                </label>
+                <select id="td-unit" class="w-full rounded-xl border border-slate-300 bg-[#F4F6F9]/60 px-4 py-2.5 text-sm font-semibold text-slate-900 focus:border-[#06B6D4] focus:bg-white focus:outline-none">
+                  <!-- Populated by JavaScript -->
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="td-tanggal" class="block text-xs font-bold text-slate-700 mb-1">
+                  Tanggal Test Drive *
+                </label>
+                <input id="td-tanggal" type="date" required class="w-full rounded-xl border border-slate-300 bg-[#F4F6F9]/60 px-4 py-2.5 text-sm text-slate-900 focus:border-[#06B6D4] focus:bg-white focus:outline-none" />
+              </div>
+              <div>
+                <label for="td-jam" class="block text-xs font-bold text-slate-700 mb-1">
+                  Jam Test Drive *
+                </label>
+                <select id="td-jam" class="w-full rounded-xl border border-slate-300 bg-[#F4F6F9]/60 px-4 py-2.5 text-sm text-slate-900 focus:border-[#06B6D4] focus:bg-white focus:outline-none">
+                  <option value="09:00 WIB">09:00 WIB</option>
+                  <option value="10:30 WIB">10:30 WIB</option>
+                  <option value="13:00 WIB">13:00 WIB</option>
+                  <option value="14:30 WIB">14:30 WIB</option>
+                  <option value="16:00 WIB">16:00 WIB</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="td-catatan" class="block text-xs font-bold text-slate-700 mb-1">
+                Catatan Test Drive
+              </label>
+              <textarea id="td-catatan" rows="2" placeholder="Contoh: Preferensi unit Test Drive, trade-in semua merk, atau simulasi kredit 1–8 tahun" class="w-full rounded-xl border border-slate-300 bg-[#F4F6F9]/60 px-4 py-2.5 text-sm text-slate-900 focus:border-[#06B6D4] focus:bg-white focus:outline-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full rounded-2xl bg-[#16A34A] px-6 py-3.5 text-xs sm:text-sm font-bold text-white shadow-sm hover:bg-green-700 transition-colors">
+              Kirim Form Test Drive ke WhatsApp Imam
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. SLIDE GAMBAR TESTIMONI SERAH TERIMA UNIT (RATING BINTANG 5 & PUAS DENGAN KANG IMAM) -->
+  <section id="testimoni" class="border-t border-slate-200 bg-white py-12 sm:py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="rounded-full bg-[#FACC15] px-3 py-1 text-[11px] font-extrabold uppercase tracking-wider text-slate-900">
+            Serah Terima Konsumen
+          </span>
+          <h2 class="mt-2 font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
+            Testimoni Serah Terima Unit BYD Bandung &amp; Cimahi
+          </h2>
+          <p class="mt-1 text-xs sm:text-sm text-slate-600">
+            Dokumentasi serah terima unit bersama Kang Imam di BYD BIPO Cimahi dan wilayah Bandung Raya.
+          </p>
+        </div>
+
+        <!-- 5-Star Rating Badge -->
+        <div class="inline-flex items-center gap-2.5 self-start sm:self-auto rounded-2xl border border-yellow-300 bg-gradient-to-r from-yellow-50 to-amber-50 px-4 py-2.5 shadow-xs">
+          <div class="flex items-center gap-0.5 text-[#F59E0B]" aria-label="Rating 5 dari 5 bintang">
+            <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+            <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+            <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+            <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+            <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+          </div>
+          <span class="text-xs font-extrabold text-slate-900">Rating Bintang 5 • Puas dengan Kang Imam</span>
+        </div>
+      </div>
+
+      <div class="rounded-3xl border border-slate-200 bg-[#F4F6F9] p-4 sm:p-7">
+        <div class="grid grid-cols-1 gap-7 lg:grid-cols-12 items-stretch">
+          <!-- Large Handover Slide Frame -->
+          <div class="lg:col-span-8 relative overflow-hidden rounded-3xl border-2 border-cyan-200 bg-white shadow-sm">
+            <div id="slide-visual-box" class="w-full">
+              <!-- Populated by JavaScript -->
+            </div>
+
+            <button id="slide-prev-btn" type="button" aria-label="Slide Sebelumnya" class="absolute left-4 top-1/2 -translate-y-1/2 flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white/95 text-slate-800 shadow-md hover:bg-cyan-50 transition-colors">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button id="slide-next-btn" type="button" aria-label="Slide Berikutnya" class="absolute right-4 top-1/2 -translate-y-1/2 flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white/95 text-slate-800 shadow-md hover:bg-cyan-50 transition-colors">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Slide Caption, 5-Star Badge & Photo Upload -->
+          <div class="lg:col-span-4 rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 flex flex-col justify-between space-y-4">
+            <div class="space-y-4">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span id="slide-tag" class="rounded-full bg-cyan-50 border border-cyan-200 px-3 py-1 text-[11px] font-bold text-cyan-900">
+                  Bandung &amp; Cimahi
+                </span>
+                <span class="inline-flex items-center gap-1 rounded-full bg-[#FACC15] px-3 py-1 text-[11px] font-extrabold text-slate-900">
+                  <span>★★★★★</span>
+                  <span>Bintang 5</span>
+                </span>
+                <span id="slide-counter" class="text-xs font-extrabold text-slate-600">1 / 4</span>
+              </div>
+
+              <div>
+                <h3 id="slide-customer" class="font-display text-xl sm:text-2xl font-extrabold text-slate-900">-</h3>
+                <p id="slide-unit" class="text-xs sm:text-sm font-bold text-[#06B6D4] mt-1">-</p>
+              </div>
+
+              <p id="slide-caption" class="rounded-2xl border border-yellow-200 bg-yellow-50/50 p-4 text-xs sm:text-sm leading-relaxed text-slate-800">
+                -
+              </p>
+
+              <label class="flex w-full cursor-pointer items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-[#F4F6F9] px-3.5 py-2.5 text-xs font-bold text-slate-800 hover:bg-cyan-50 transition-colors">
+                <span>Upload Foto Slide Serah Terima</span>
+                <input id="slide-photo-input" type="file" accept="image/*" class="hidden" />
+              </label>
+            </div>
+
+            <!-- Slide Dots -->
+            <div id="slide-dots" class="flex items-center gap-2 pt-2">
+              <!-- Populated by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. LOKASI DEALER & GOOGLE MAPS (BYD BIPO CIMAHI) -->
+  <section id="lokasi-dealer" class="border-t border-slate-200 bg-[#F4F6F9] py-12 sm:py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mb-8">
+        <span class="rounded-full bg-[#06B6D4] px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
+          Informasi Dealer Resmi
+        </span>
+        <h2 class="mt-2 font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
+          PT BIPO Teknologi Otomotif — BYD BIPO Cimahi
+        </h2>
+        <p class="mt-1 text-xs sm:text-sm text-slate-700">
+          Jl. Jend. H. Amir Machmud No. 52, Cibereum, Kec. Cimahi Selatan, Kota Cimahi, Jawa Barat 40535.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-12 items-stretch">
+        <div class="lg:col-span-7 rounded-3xl border border-slate-200 bg-white p-4 sm:p-5 shadow-sm space-y-4">
+          <!-- Dedicated Showroom Image Frame Underneath Official Dealer Info -->
+          <div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-[#F4F6F9] via-white to-cyan-50/60 p-3.5 sm:p-4 space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="rounded-full bg-[#FACC15] px-2.5 py-0.5 text-[11px] font-extrabold text-slate-900">
+                  Showroom
+                </span>
+                <p class="text-xs sm:text-sm font-extrabold text-slate-900">
+                  BYD BIPO Cimahi — Jl. Jend. H. Amir Machmud No. 52
+                </p>
+              </div>
+              <div class="flex items-center gap-2">
+                <label class="inline-flex cursor-pointer items-center gap-1 rounded-xl border border-cyan-300 bg-cyan-50 px-3 py-1.5 text-[11px] font-bold text-cyan-900 hover:bg-cyan-100 transition-colors">
+                  <span>Upload Foto Showroom</span>
+                  <input id="showroom-photo-input" type="file" accept="image/*" class="hidden" />
+                </label>
+                <button id="showroom-photo-reset" type="button" class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 text-[11px] font-bold text-slate-600 hover:bg-slate-100 transition-colors">
+                  Reset
+                </button>
+              </div>
+            </div>
+
+            <div id="showroom-photo-frame" class="h-48 sm:h-56 w-full overflow-hidden rounded-2xl border border-slate-200/90 bg-white flex items-center justify-center">
+              <!-- Default Inline SVG Showroom Illustration -->
+              <svg id="showroom-default-svg" class="h-full w-full" viewBox="0 0 640 240" fill="none" role="img" aria-label="Ilustrasi Showroom BYD BIPO Cimahi">
+                <rect width="640" height="240" fill="#F8FAFC" />
+                <circle cx="535" cy="52" r="72" fill="#06B6D4" fill-opacity="0.08" />
+                <circle cx="105" cy="195" r="85" fill="#FACC15" fill-opacity="0.14" />
+                <!-- Showroom Facade -->
+                <rect x="68" y="42" width="504" height="146" rx="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+                <rect x="68" y="42" width="504" height="34" rx="14" fill="#06B6D4" fill-opacity="0.14" />
+                <rect x="92" y="51" width="66" height="16" rx="6" fill="#06B6D4" />
+                <text x="125" y="63" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="10" font-weight="800">BYD</text>
+                <text x="172" y="63" fill="#0F172A" font-family="Inter, sans-serif" font-size="11" font-weight="800">BIPO CIMAHI SHOWROOM • PT BIPO TEKNOLOGI OTOMOTIF</text>
+                <rect x="478" y="50" width="74" height="18" rx="9" fill="#FACC15" />
+                <text x="515" y="62" text-anchor="middle" fill="#0F172A" font-family="Inter, sans-serif" font-size="9.5" font-weight="800">BANDUNG RAYA</text>
+                <!-- Glass Windows -->
+                <rect x="92" y="92" width="215" height="78" rx="10" fill="#F4F6F9" stroke="#E2E8F0" stroke-width="1.5" />
+                <rect x="323" y="92" width="229" height="78" rx="10" fill="#F4F6F9" stroke="#E2E8F0" stroke-width="1.5" />
+                <!-- Display Car Silhouette 1 -->
+                <ellipse cx="199" cy="154" rx="58" ry="6" fill="#CBD5E1" fill-opacity="0.65" />
+                <path d="M148 140 L158 118 L184 106 L224 106 L246 118 L256 140 Z" fill="#06B6D4" fill-opacity="0.22" stroke="#06B6D4" stroke-width="2.5" stroke-linejoin="round" />
+                <path d="M166 118 L186 110 L220 110 L236 118 Z" fill="#FFFFFF" stroke="#06B6D4" stroke-width="1.8" />
+                <circle cx="172" cy="142" r="9.5" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.5" />
+                <circle cx="172" cy="142" r="3.5" fill="#06B6D4" />
+                <circle cx="232" cy="142" r="9.5" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.5" />
+                <circle cx="232" cy="142" r="3.5" fill="#06B6D4" />
+                <!-- Display Car Silhouette 2 -->
+                <ellipse cx="437" cy="154" rx="62" ry="6" fill="#CBD5E1" fill-opacity="0.65" />
+                <path d="M382 140 L393 116 L422 104 L464 104 L488 116 L498 140 Z" fill="#EF4444" fill-opacity="0.18" stroke="#EF4444" stroke-width="2.5" stroke-linejoin="round" />
+                <path d="M402 116 L424 108 L460 108 L478 116 Z" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.8" />
+                <circle cx="408" cy="142" r="9.5" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.5" />
+                <circle cx="408" cy="142" r="3.5" fill="#EF4444" />
+                <circle cx="472" cy="142" r="9.5" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.5" />
+                <circle cx="472" cy="142" r="3.5" fill="#EF4444" />
+                <!-- Forecourt Line -->
+                <line x1="48" y1="194" x2="592" y2="194" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round" />
+                <text x="320" y="216" text-anchor="middle" fill="#475569" font-family="Inter, sans-serif" font-size="11" font-weight="700">Jl. Jend. H. Amir Machmud No. 52, Cibereum, Cimahi Selatan</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Embedded Google Maps Frame -->
+          <div class="overflow-hidden rounded-2xl border border-slate-200 bg-[#F4F6F9]">
+            <iframe title="Peta Lokasi BYD BIPO Cimahi — Jl. Jend. H. Amir Machmud No. 52" src="https://maps.google.com/maps?q=Jl.+Jend.+H.+Amir+Machmud+No.+52,+Cibereum,+Kec.+Cimahi+Selatan,+Kota+Cimahi,+Jawa+Barat+40535&output=embed" class="h-64 sm:h-72 w-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="flex flex-wrap gap-3 pt-1">
+            <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Jend.+H.+Amir+Machmud+No.+52,+Cibereum,+Kec.+Cimahi+Selatan,+Kota+Cimahi,+Jawa+Barat+40535" target="_blank" rel="noopener noreferrer" class="rounded-xl bg-[#06B6D4] px-4 py-2.5 text-xs sm:text-sm font-bold text-white hover:bg-cyan-600 transition-colors">
+              Google Maps (Tab Baru)
+            </a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Jl.+Jend.+H.+Amir+Machmud+No.+52,+Cibereum,+Kec.+Cimahi+Selatan,+Kota+Cimahi,+Jawa+Barat+40535" target="_blank" rel="noopener noreferrer" class="rounded-xl border border-yellow-400 bg-[#FACC15] px-4 py-2.5 text-xs sm:text-sm font-bold text-slate-900 hover:bg-yellow-300 transition-colors">
+              Petunjuk Rute Maps
+            </a>
+            <button id="copy-address-btn" type="button" class="rounded-xl border border-slate-300 bg-[#F4F6F9] px-4 py-2.5 text-xs sm:text-sm font-semibold text-slate-800 hover:bg-slate-200/70 transition-colors">
+              Salin Alamat
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 rounded-3xl border border-slate-200 bg-white p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center gap-3.5">
+              <div class="h-20 w-20 shrink-0 overflow-hidden rounded-2xl border-2 border-[#FACC15] bg-cyan-50">
+                <img id="imam-card-img" src="https://placehold.co/200x200/06B6D4/FFFFFF?text=IMAM" alt="Foto Sales Konsultan Imam" onerror="this.onerror=null;this.src='https://placehold.co/200x200/06B6D4/FFFFFF?text=IMAM';" class="h-full w-full object-cover object-top" />
+              </div>
+              <div>
+                <span class="rounded-full bg-[#FACC15] px-3 py-0.5 text-[11px] font-extrabold text-slate-900">
+                  Sales Konsultan
+                </span>
+                <h3 class="mt-1 font-display text-2xl font-extrabold text-slate-900">IMAM</h3>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600">
+              Siap membantu informasi unit, simulasi kredit 1–8 tahun, trade-in semua merk, diskon special, dan jadwal test drive.
+            </p>
+            <p class="rounded-xl bg-[#F4F6F9] px-3.5 py-2.5 text-xs sm:text-sm font-bold text-slate-900">
+              WhatsApp: <span class="text-[#16A34A]">0823-1501-1610</span>
+            </p>
+          </div>
+
+          <a href="https://wa.me/6282315011610?text=Halo%20Kang%20Imam%2C%20saya%20ingin%20berkunjung%20ke%20BYD%20BIPO%20Cimahi%20%2F%20konsultasi%20unit%20BYD." target="_blank" rel="noopener noreferrer" class="flex w-full items-center justify-center rounded-2xl bg-[#16A34A] px-5 py-3.5 text-xs sm:text-sm font-bold text-white hover:bg-green-700 transition-colors">
+            Hubungi WhatsApp Imam
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white py-6 pb-24 sm:pb-8 text-center text-xs text-slate-600">
+    <div class="mx-auto max-w-7xl px-4">
+      <p class="font-bold text-slate-900">BYD Bandung — PT BIPO Teknologi Otomotif (BYD BIPO Cimahi)</p>
+      <p class="mt-1">Jl. Jend. H. Amir Machmud No. 52, Cibereum, Kec. Cimahi Selatan, Kota Cimahi, Jawa Barat 40535 • Sales Konsultan: IMAM (082315011610)</p>
+    </div>
+  </footer>
+
+  <!-- Self-Contained Application Logic -->
+  <script>
+    (function () {
+      'use strict';
+
+      // Promo programs with colorful accents & SVG icons
+      const promoList = [
+        {
+          title: 'Cash',
+          badge: 'Tunai',
+          desc: 'Pembelian tunai cepat dan transparan untuk seluruh tipe kendaraan BYD di wilayah Bandung & Cimahi.',
+          accent: 'cyan'
+        },
+        {
+          title: 'Kredit',
+          badge: 'Pembiayaan',
+          desc: 'Skema kredit terjangkau dengan proses pengajuan terarah dan pendampingan penuh hingga unit tiba.',
+          accent: 'yellow'
+        },
+        {
+          title: 'Trade-In (Terima Semua Merk)',
+          badge: 'Tukar Tambah',
+          desc: 'Tukar tambah kendaraan lama Anda dari semua merk dengan proses penilaian praktis dan kompetitif.',
+          accent: 'red'
+        },
+        {
+          title: 'Bunga 0%',
+          badge: 'Promo Khusus',
+          desc: 'Kesempatan program Bunga 0% untuk skema & unit tertentu sesuai ketentuan periode promo berjalan.',
+          accent: 'cyan'
+        },
+        {
+          title: 'Cash Bertahap',
+          badge: 'Fleksibel',
+          desc: 'Opsi pembayaran bertahap terjadwal untuk kemudahan perencanaan anggaran pembelian unit Anda.',
+          accent: 'yellow'
+        },
+        {
+          title: 'Tenor Panjang (1 s/d 8 Tahun)',
+          badge: '1–8 Tahun',
+          desc: 'Pilihan jangka waktu cicilan mulai 1 tahun hingga tenor panjang 8 tahun sesuai kebutuhan bulanan.',
+          accent: 'red'
+        },
+        {
+          title: 'Diskon Special',
+          badge: 'Terbatas',
+          desc: 'Penawaran Diskon Special langsung dari Sales Konsultan Imam di BYD BIPO Cimahi.',
+          accent: 'cyan'
+        }
+      ];
+
+      // Full BYD unit & pricing data
+      const catalogData = [
+        {
+          id: 'm6-dm-cross-adv',
+          name: 'BYD M6 DM – CROSS ADVANCED',
+          category: 'MPV & Hybrid DM',
+          colorHex: '#06B6D4',
+          specSummary: 'Varian Cross Advanced',
+          variants: [
+            { label: 'CROSS ADVANCED', price: 369900000, info: 'Harga Resmi' }
+          ]
+        },
+        {
+          id: 'atto-1',
+          name: 'BYD ATTO 1',
+          category: 'Compact & City EV',
+          colorHex: '#FACC15',
+          specSummary: 'PREMIUM: 380 km / 38,88 kWh • DYNAMIC & STANDAR: 300 km / 30,08 kWh',
+          variants: [
+            { label: 'PREMIUM', price: 251000000, info: 'Driving Range / Battery Capacity: 380 km / 38,88 kWh' },
+            { label: 'DYNAMIC', price: 216000000, info: 'Driving Range / Battery Capacity: 300 km / 30,08 kWh' },
+            { label: 'STANDAR', price: 205000000, info: 'Driving Range / Battery Capacity: 300 km / 30,08 kWh' }
+          ]
+        },
+        {
+          id: 'byd-m6',
+          name: 'BYD M6',
+          category: 'MPV & Hybrid DM',
+          colorHex: '#06B6D4',
+          specSummary: 'SUPERIOR: 600 km / 75,6 kWh (CAPT SEAT, NIK 2026) • STANDAR: 450 km / 58 kWh',
+          variants: [
+            { label: 'SUPERIOR', price: 455000000, info: 'CAPT SEAT, NIK 2026 • Driving Range / Battery: 600 km / 75,6 kWh' },
+            { label: '7 SEATER', price: 445000000, info: 'Konfigurasi 7 Seater' },
+            { label: 'STANDAR', price: 405000000, info: 'Driving Range / Battery Capacity: 450 km / 58 kWh' }
+          ]
+        },
+        {
+          id: 'atto-3',
+          name: 'BYD ATTO 3',
+          category: 'SUV & Crossover EV',
+          colorHex: '#EF4444',
+          specSummary: 'Driving Range / Battery Capacity: 410 km / 49,92 kWh',
+          variants: [
+            { label: 'ADVANCE+', price: 425000000, info: 'Driving Range / Battery Capacity: 410 km / 49,92 kWh' }
+          ]
+        },
+        {
+          id: 'dolphin',
+          name: 'BYD DOLPHIN',
+          category: 'Compact & City EV',
+          colorHex: '#06B6D4',
+          specSummary: 'Pilihan Include Wall Charging & Exclude Wall Charging',
+          variants: [
+            { label: 'PREMIUM — Include Wall Charging', price: 439000000, info: 'Include Wall Charging' },
+            { label: 'PREMIUM — Exclude Wall Charging', price: 430500000, info: 'Exclude Wall Charging' },
+            { label: 'DYNAMIC — Include Wall Charging', price: 375000000, info: 'Include Wall Charging' },
+            { label: 'DYNAMIC — Exclude Wall Charging', price: 366500000, info: 'Exclude Wall Charging' }
+          ]
+        },
+        {
+          id: 'sealion-7',
+          name: 'BYD SEALION 7',
+          category: 'SUV & Crossover EV',
+          colorHex: '#EF4444',
+          specSummary: 'Include Wall Charging • NIK 2026',
+          variants: [
+            { label: 'SEALION 7 (Include Wall Charging, NIK 2026)', price: 891000000, info: 'Include Wall Charging • NIK 2026' }
+          ]
+        },
+        {
+          id: 'byd-seal',
+          name: 'BYD SEAL',
+          category: 'Sedan EV',
+          colorHex: '#0284C7',
+          specSummary: 'Include Wall Charging • NIK 2026',
+          variants: [
+            { label: 'SEAL (Include Wall Charging, NIK 2026)', price: 889000000, info: 'Include Wall Charging • NIK 2026' }
+          ]
+        },
+        {
+          id: 'byd-m6-dm',
+          name: 'BYD M6 DM',
+          category: 'MPV & Hybrid DM',
+          colorHex: '#EAB308',
+          specSummary: 'Varian Classic, Cross & Super Cross',
+          variants: [
+            { label: 'CLASSIC', price: 307900000, info: 'Varian Classic' },
+            { label: 'CLASSIC (varian berikutnya)', price: 327900000, info: 'Classic (varian berikutnya)' },
+            { label: 'CROSS', price: 369900000, info: 'Varian Cross' },
+            { label: 'CROSS (varian berikutnya)', price: 389900000, info: 'Cross (varian berikutnya)' },
+            { label: 'SUPER CROSS / varian tertinggi', price: 399900000, info: 'Super Cross / varian tertinggi' }
+          ]
+        }
+      ];
+
+      // Customer handover testimonials highlighting satisfaction with Kang Imam
+      const testimoniData = [
+        {
+          tag: 'Cimahi & Bandung',
+          customer: 'Bapak Hendra Wijaya',
+          unit: 'BYD M6 DM — CROSS ADVANCED',
+          caption: 'Sangat puas dengan Kang Imam! Penjelasannya detail, respons cepat, dan proses serah terima BYD M6 DM Cross Advanced di Cimahi & Bandung berjalan lancar serta transparan.',
+          accent: '#06B6D4'
+        },
+        {
+          tag: 'Kota Bandung',
+          customer: 'Ibu Nadia Kusuma',
+          unit: 'BYD ATTO 1 — PREMIUM (380 km / 38,88 kWh)',
+          caption: 'Puas sekali dengan Kang Imam dari awal tanya unit hingga serah terima BYD ATTO 1 Premium di Kota Bandung. Pelayanannya ramah, sabar, dan sangat membantu.',
+          accent: '#FACC15'
+        },
+        {
+          tag: 'Bandung Raya',
+          customer: 'Bapak Arif Rahman',
+          unit: 'BYD M6 — SUPERIOR (CAPT SEAT, NIK 2026)',
+          caption: 'Sangat puas dengan Kang Imam dan tim BYD BIPO Cimahi. Proses pengajuan mudah, hitungan jelas, dan unit BYD M6 Superior Captain Seat tiba tepat waktu di Bandung Raya.',
+          accent: '#EF4444'
+        },
+        {
+          tag: 'Kota Cimahi',
+          customer: 'Bapak Dimas Pratama',
+          unit: 'BYD SEALION 7 — Include Wall Charging (NIK 2026)',
+          caption: 'Puas dengan Kang Imam! Pendampingannya maksimal mulai dari informasi unit, kelengkapan Wall Charging, sampai serah terima BYD Sealion 7 di Kota Cimahi.',
+          accent: '#0284C7'
+        }
+      ];
+
+      let activeCategory = 'Semua';
+      let activeTenorYears = 5;
+      let activeSlideIndex = 0;
+      let isSyncingDp = false;
+
+      // Flatten all unit variants for simulation & Test Drive selectors
+      const flatUnits = [];
+      catalogData.forEach((model) => {
+        model.variants.forEach((v, idx) => {
+          flatUnits.push({
+            key: `${model.id}__${idx}`,
+            fullName: `${model.name} — ${v.label}`,
+            price: v.price
+          });
+        });
+      });
+
+      function formatIDR(amount) {
+        const num = Number(amount) || 0;
+        return 'Rp ' + Math.round(num).toLocaleString('id-ID');
+      }
+
+      function showToast(msg) {
+        try {
+          const box = document.getElementById('toast-box');
+          const textEl = document.getElementById('toast-message');
+          if (!box || !textEl) return;
+          textEl.textContent = msg;
+          box.classList.remove('hidden');
+          clearTimeout(window.__toastTimer);
+          window.__toastTimer = setTimeout(() => {
+            box.classList.add('hidden');
+          }, 2800);
+        } catch (err) {
+          // Safe fallback if DOM toast is unavailable
+        }
+      }
+
+      function getPromoSvg(index, accent) {
+        const colorClass =
+          accent === 'yellow' ? 'bg-yellow-100 text-yellow-700 border-yellow-300' :
+          accent === 'red' ? 'bg-red-100 text-[#EF4444] border-red-200' :
+          'bg-cyan-100 text-[#06B6D4] border-cyan-200';
+
+        const paths = [
+          '<path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />',
+          '<path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />',
+          '<path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />',
+          '<path stroke-linecap="round" stroke-linejoin="round" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M12 3a9 9 0 100 18 9 9 0 000-18z" />',
+          '<path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />',
+          '<path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />',
+          '<path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />'
+        ];
+
+        return `
+          <div class="flex h-11 w-11 items-center justify-center rounded-2xl border ${colorClass}">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.1" viewBox="0 0 24 24">
+              ${paths[index % paths.length]}
+            </svg>
+          </div>
+        `;
+      }
+
+      function getCarIllustration(model) {
+        const c = model.colorHex || '#06B6D4';
+        const customPhoto = window.__unitCustomPhotos && window.__unitCustomPhotos[model.id];
+        return `
+          <div class="rounded-3xl border border-slate-200 bg-gradient-to-b from-[#F4F6F9] via-white to-cyan-50/50 p-4 sm:p-5 space-y-3">
+            <div class="flex items-start justify-between gap-3">
+              <div class="min-w-0">
+                <h3 class="font-display text-base sm:text-lg font-extrabold text-slate-900">${model.name}</h3>
+                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">${model.specSummary}</p>
+              </div>
+              <label class="inline-flex shrink-0 cursor-pointer items-center rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-[11px] font-bold text-slate-800 shadow-xs hover:bg-cyan-50 transition-colors">
+                <span>Upload Foto Unit</span>
+                <input type="file" accept="image/*" data-unit-photo="${model.id}" class="unit-photo-input hidden" />
+              </label>
+            </div>
+            <div class="h-48 sm:h-56 lg:h-60 w-full overflow-hidden rounded-2xl border border-slate-200/90 bg-white flex items-center justify-center p-3">
+              ${customPhoto
+                ? `<img src="${customPhoto}" alt="${model.name}" onerror="this.onerror=null;this.src='https://placehold.co/600x320/F4F6F9/1E293B?text=${encodeURIComponent(model.name)}';" class="h-full w-full rounded-xl object-cover" />`
+                : `<svg class="h-40 sm:h-48 w-full max-w-md" viewBox="0 0 220 105" fill="none" aria-hidden="true">
+                    <ellipse cx="110" cy="90" rx="86" ry="8" fill="#E2E8F0" />
+                    <path d="M28 70 L40 45 L74 28 L138 28 L172 45 L188 70 Z" fill="${c}" fill-opacity="0.22" stroke="${c}" stroke-width="3" stroke-linejoin="round" />
+                    <path d="M52 45 L78 33 L134 33 L158 45 Z" fill="#FFFFFF" stroke="${c}" stroke-width="2.2" />
+                    <circle cx="66" cy="72" r="13.5" fill="#FFFFFF" stroke="#1E293B" stroke-width="3" />
+                    <circle cx="66" cy="72" r="5.5" fill="${c}" />
+                    <circle cx="154" cy="72" r="13.5" fill="#FFFFFF" stroke="#1E293B" stroke-width="3" />
+                    <circle cx="154" cy="72" r="5.5" fill="${c}" />
+                  </svg>`
+              }
+            </div>
+          </div>
+        `;
+      }
+
+      function renderPromos() {
+        const grid = document.getElementById('promo-grid');
+        if (!grid) return;
+
+        grid.innerHTML = promoList.map((item, idx) => {
+          const pillClass =
+            item.accent === 'yellow' ? 'bg-[#FACC15] text-slate-900' :
+            item.accent === 'red' ? 'bg-red-50 text-[#EF4444] border border-red-200' :
+            'bg-cyan-50 text-cyan-900 border border-cyan-200';
+
+          return `
+            <div class="rounded-2xl border border-slate-200 bg-[#F4F6F9]/65 p-5 hover:bg-white hover:border-cyan-300 transition-all flex flex-col justify-between space-y-3">
+              <div class="flex items-center justify-between gap-2">
+                ${getPromoSvg(idx, item.accent)}
+                <span class="rounded-full px-2.5 py-0.5 text-[11px] font-bold ${pillClass}">${item.badge}</span>
+              </div>
+              <div>
+                <h3 class="font-display text-base font-extrabold text-slate-900">${item.title}</h3>
+                <p class="mt-1 text-xs leading-relaxed text-slate-600">${item.desc}</p>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      function renderCategoryFilters() {
+        const container = document.getElementById('category-filters');
+        if (!container) return;
+
+        const categories = ['Semua', ...Array.from(new Set(catalogData.map((m) => m.category)))];
+        container.innerHTML = categories.map((cat) => {
+          const active = cat === activeCategory;
+          const cls = active
+            ? 'bg-[#06B6D4] text-white border-[#06B6D4]'
+            : 'bg-white text-slate-700 border-slate-300 hover:bg-cyan-50';
+          return `
+            <button type="button" data-category="${cat}" class="category-filter-btn rounded-xl border px-3.5 py-2 text-xs font-bold transition-colors ${cls}">
+              ${cat}
+            </button>
+          `;
+        }).join('');
+
+        container.querySelectorAll('.category-filter-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            activeCategory = btn.getAttribute('data-category') || 'Semua';
+            renderCategoryFilters();
+            renderCatalog();
+          });
+        });
+      }
+
+      function renderCatalog() {
+        const grid = document.getElementById('catalog-grid');
+        if (!grid) return;
+
+        const filtered = activeCategory === 'Semua'
+          ? catalogData
+          : catalogData.filter((m) => m.category === activeCategory);
+
+        grid.innerHTML = filtered.map((model) => {
+          const rows = model.variants.map((v, idx) => {
+            const unitKey = `${model.id}__${idx}`;
+            const waText = encodeURIComponent(
+              `Halo Kang Imam BYD Bandung, saya mau tanya harga & promo ${model.name} - ${v.label} (${formatIDR(v.price)}).`
+            );
+
+            return `
+              <div class="rounded-xl border border-slate-200 bg-[#F4F6F9]/80 p-3.5 space-y-2">
+                <div class="flex items-start justify-between gap-2">
+                  <div>
+                    <p class="text-xs sm:text-sm font-bold text-slate-900">${v.label}</p>
+                    <p class="text-[11px] text-slate-600 mt-0.5">${v.info}</p>
+                  </div>
+                  <span class="shrink-0 font-display text-xs sm:text-sm font-extrabold text-[#06B6D4]">
+                    ${formatIDR(v.price)}
+                  </span>
+                </div>
+                <div class="flex flex-wrap items-center gap-2 pt-1">
+                  <button type="button" data-sim-key="${unitKey}" class="sim-trigger-btn rounded-lg bg-[#06B6D4] px-3 py-1.5 text-[11px] font-bold text-white hover:bg-cyan-600 transition-colors">
+                    Simulasi Kredit
+                  </button>
+                  <a href="https://wa.me/6282315011610?text=${waText}" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-green-300 bg-[#16A34A] px-3 py-1.5 text-[11px] font-bold text-white hover:bg-green-700 transition-colors">
+                    WhatsApp Imam
+                  </a>
+                </div>
+              </div>
+            `;
+          }).join('');
+
+          return `
+            <article class="rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-sm space-y-4">
+              <div class="flex items-center justify-between gap-2">
+                <span class="rounded-full bg-[#FACC15] px-3 py-0.5 text-[11px] font-extrabold text-slate-900">${model.category}</span>
+              </div>
+              ${getCarIllustration(model)}
+              <div class="space-y-2.5">
+                ${rows}
+              </div>
+            </article>
+          `;
+        }).join('');
+
+        grid.querySelectorAll('.sim-trigger-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const key = btn.getAttribute('data-sim-key');
+            const selectEl = document.getElementById('sim-unit');
+            if (selectEl && key) {
+              selectEl.value = key;
+              syncNominalFromPercent();
+              updateSimulation();
+              document.getElementById('simulasi-kredit')?.scrollIntoView({ behavior: 'smooth' });
+            }
+          });
+        });
+
+        window.__unitCustomPhotos = window.__unitCustomPhotos || {};
+        grid.querySelectorAll('.unit-photo-input').forEach((input) => {
+          input.addEventListener('change', (e) => {
+            const file = e.target.files && e.target.files[0];
+            const modelId = input.getAttribute('data-unit-photo');
+            if (!file || !modelId) return;
+            const reader = new FileReader();
+            reader.onload = () => {
+              window.__unitCustomPhotos[modelId] = reader.result;
+              renderCatalog();
+              showToast('Foto unit berhasil diperbarui.');
+            };
+            reader.readAsDataURL(file);
+          });
+        });
+      }
+
+      function populateUnitSelects() {
+        const simSelect = document.getElementById('sim-unit');
+        const tdSelect = document.getElementById('td-unit');
+
+        const optionsHtml = flatUnits.map((u) => {
+          return `<option value="${u.key}">${u.fullName} — ${formatIDR(u.price)}</option>`;
+        }).join('');
+
+        if (simSelect) simSelect.innerHTML = optionsHtml;
+        if (tdSelect) tdSelect.innerHTML = optionsHtml;
+      }
+
+      function renderTenorButtons() {
+        const wrap = document.getElementById('sim-tenor-buttons');
+        if (!wrap) return;
+
+        wrap.innerHTML = Array.from({ length: 8 }, (_, i) => i + 1).map((yr) => {
+          const isSelected = yr === activeTenorYears;
+          const cls = isSelected
+            ? 'bg-[#06B6D4] text-white border-[#06B6D4]'
+            : 'bg-white text-slate-800 border-slate-300 hover:bg-cyan-50';
+          return `
+            <button type="button" data-tenor="${yr}" class="tenor-btn rounded-xl border py-2 text-xs font-extrabold transition-colors ${cls}">
+              ${yr} Thn
+            </button>
+          `;
+        }).join('');
+
+        wrap.querySelectorAll('.tenor-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            activeTenorYears = Number(btn.getAttribute('data-tenor')) || 5;
+            renderTenorButtons();
+            updateSimulation();
+          });
+        });
+      }
+
+      function getSelectedUnit() {
+        const simSelect = document.getElementById('sim-unit');
+        const key = simSelect ? simSelect.value : flatUnits[0].key;
+        return flatUnits.find((u) => u.key === key) || flatUnits[0];
+      }
+
+      function syncNominalFromPercent() {
+        const unit = getSelectedUnit();
+        const discountVal = Math.max(0, Number(document.getElementById('sim-discount')?.value || 0) || 0);
+        const netPrice = Math.max(0, unit.price - discountVal);
+        const pctInput = document.getElementById('sim-dp-percent');
+        const nomInput = document.getElementById('sim-dp-nominal');
+        const pctLabel = document.getElementById('sim-dp-percent-label');
+        if (!pctInput || !nomInput) return;
+
+        const pct = Number(pctInput.value) || 20;
+        if (pctLabel) pctLabel.textContent = `${pct}%`;
+
+        isSyncingDp = true;
+        nomInput.value = Math.round((netPrice * pct) / 100);
+        isSyncingDp = false;
+      }
+
+      function syncPercentFromNominal() {
+        if (isSyncingDp) return;
+        const unit = getSelectedUnit();
+        const discountVal = Math.max(0, Number(document.getElementById('sim-discount')?.value || 0) || 0);
+        const netPrice = Math.max(0, unit.price - discountVal);
+        const pctInput = document.getElementById('sim-dp-percent');
+        const nomInput = document.getElementById('sim-dp-nominal');
+        const pctLabel = document.getElementById('sim-dp-percent-label');
+        if (!pctInput || !nomInput) return;
+
+        let nom = Number(nomInput.value) || 0;
+        if (nom < 0) nom = 0;
+        if (nom > netPrice) nom = netPrice;
+
+        const pct = netPrice > 0 ? Math.min(70, Math.max(10, Math.round((nom / netPrice) * 100))) : 20;
+        pctInput.value = pct;
+        if (pctLabel) pctLabel.textContent = `${pct}%`;
+      }
+
+      function updateSimulation() {
+        const unit = getSelectedUnit();
+        const discountInput = document.getElementById('sim-discount');
+        const nomInput = document.getElementById('sim-dp-nominal');
+
+        const rawDiscount = Math.max(0, Number(discountInput ? discountInput.value : 0) || 0);
+        const discount = Math.min(unit.price, rawDiscount);
+        const netPrice = Math.max(0, unit.price - discount);
+        const dpNominal = Math.min(netPrice, Math.max(0, Number(nomInput ? nomInput.value : 0) || 0));
+        const principal = Math.max(0, netPrice - dpNominal);
+        const months = activeTenorYears * 12;
+
+        // Clean monthly estimate without displaying any interest rate percentage
+        const monthlyEstimate = months > 0 ? Math.round((principal * 1.045) / months) : 0;
+
+        document.getElementById('sim-out-unit').textContent = unit.fullName;
+        document.getElementById('sim-out-otr').textContent = formatIDR(unit.price);
+        document.getElementById('sim-out-net').textContent = formatIDR(netPrice);
+        document.getElementById('sim-out-dp').textContent = formatIDR(dpNominal);
+        document.getElementById('sim-out-monthly').textContent = formatIDR(monthlyEstimate);
+        document.getElementById('sim-badge-tenor').textContent = `${activeTenorYears} Tahun (${months} Bln)`;
+
+        const msg = [
+          'Halo Kang Imam (BYD BIPO Cimahi), saya ingin tanya simulasi kredit:',
+          `• Unit: ${unit.fullName}`,
+          `• Harga OTR: ${formatIDR(unit.price)}`,
+          discount > 0 ? `• Diskon Special: ${formatIDR(discount)}` : '',
+          `• DP: ${formatIDR(dpNominal)}`,
+          `• Tenor: ${activeTenorYears} Tahun (${months} Bulan)`,
+          `• Estimasi Angsuran: ${formatIDR(monthlyEstimate)} / bulan`
+        ].filter(Boolean).join('\n');
+
+        const waLink = document.getElementById('sim-wa-link');
+        if (waLink) {
+          waLink.href = `https://wa.me/6282315011610?text=${encodeURIComponent(msg)}`;
+        }
+      }
+
+      function renderSlide() {
+        const slide = testimoniData[activeSlideIndex];
+        if (!slide) return;
+
+        window.__slideCustomPhotos = window.__slideCustomPhotos || {};
+        const customSlideImg = window.__slideCustomPhotos[activeSlideIndex];
+
+        const visualBox = document.getElementById('slide-visual-box');
+        if (visualBox) {
+          visualBox.innerHTML = `
+            <div class="h-72 sm:h-96 lg:h-[430px] w-full bg-gradient-to-br from-white via-[#F4F6F9] to-cyan-50/70 p-5 sm:p-7 flex flex-col justify-between">
+              <div class="flex items-center justify-between gap-2">
+                <span class="rounded-full bg-[#FACC15] px-3.5 py-1 text-xs font-extrabold text-slate-900">
+                  Serah Terima Unit #${activeSlideIndex + 1}
+                </span>
+                <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-bold text-slate-700">
+                  BYD BIPO Cimahi
+                </span>
+              </div>
+
+              ${customSlideImg
+                ? `<div class="my-3 flex-1 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                    <img src="${customSlideImg}" alt="${slide.unit}" onerror="this.onerror=null;this.src='https://placehold.co/800x420/F4F6F9/1E293B?text=${encodeURIComponent(slide.unit)}';" class="h-full w-full object-cover" />
+                   </div>`
+                : `<div class="my-auto flex flex-col items-center justify-center text-center px-4">
+                    <svg class="h-24 sm:h-28 w-48 sm:w-56" viewBox="0 0 180 86" fill="none" aria-hidden="true">
+                      <ellipse cx="90" cy="74" rx="70" ry="7" fill="#CBD5E1" fill-opacity="0.6" />
+                      <path d="M26 56 L36 37 L64 24 L112 24 L140 37 L152 56 Z" fill="${slide.accent}" fill-opacity="0.22" stroke="${slide.accent}" stroke-width="2.8" stroke-linejoin="round" />
+                      <path d="M44 37 L66 28 L108 28 L128 37 Z" fill="#FFFFFF" stroke="${slide.accent}" stroke-width="2" />
+                      <circle cx="54" cy="58" r="11" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.8" />
+                      <circle cx="54" cy="58" r="4.5" fill="${slide.accent}" />
+                      <circle cx="126" cy="58" r="11" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.8" />
+                      <circle cx="126" cy="58" r="4.5" fill="${slide.accent}" />
+                    </svg>
+                    <span class="mt-2 inline-flex items-center gap-1 rounded-full bg-[#FACC15] px-3 py-0.5 text-xs font-extrabold text-slate-900">★★★★★ Bintang 5 • Puas dengan Kang Imam</span>
+                    <p class="mt-2 font-display text-base sm:text-xl font-extrabold text-slate-900">${slide.unit}</p>
+                    <p class="mt-1 text-xs sm:text-sm font-semibold text-slate-600">${slide.customer} — ${slide.tag}</p>
+                  </div>`
+              }
+
+              <div class="flex items-center justify-between gap-2 rounded-xl border border-slate-200/90 bg-white/90 px-4 py-2.5 text-xs font-semibold text-slate-700">
+                <span class="truncate">${slide.customer} • ${slide.unit}</span>
+                <span class="shrink-0 font-extrabold text-[#D97706]">★★★★★ • ${slide.tag}</span>
+              </div>
+            </div>
+          `;
+        }
+
+        document.getElementById('slide-tag').textContent = slide.tag;
+        document.getElementById('slide-counter').textContent = `${activeSlideIndex + 1} / ${testimoniData.length}`;
+        document.getElementById('slide-customer').textContent = slide.customer;
+        document.getElementById('slide-unit').textContent = slide.unit;
+        document.getElementById('slide-caption').textContent = slide.caption;
+
+        const dots = document.getElementById('slide-dots');
+        if (dots) {
+          dots.innerHTML = testimoniData.map((_, idx) => {
+            const active = idx === activeSlideIndex;
+            const cls = active
+              ? 'h-2.5 w-8 rounded-full bg-[#06B6D4]'
+              : 'h-2.5 w-2.5 rounded-full bg-slate-300 hover:bg-slate-400';
+            return `<button type="button" data-slide="${idx}" aria-label="Slide ${idx + 1}" class="slide-dot-btn transition-all ${cls}"></button>`;
+          }).join('');
+
+          dots.querySelectorAll('.slide-dot-btn').forEach((btn) => {
+            btn.addEventListener('click', () => {
+              activeSlideIndex = Number(btn.getAttribute('data-slide')) || 0;
+              renderSlide();
+            });
+          });
+        }
+      }
+
+      function initEvents() {
+        // Quick category links in header
+        document.querySelectorAll('.quick-cat-link').forEach((link) => {
+          link.addEventListener('click', () => {
+            const cat = link.getAttribute('data-quick-cat') || 'Semua';
+            activeCategory = cat;
+            renderCategoryFilters();
+            renderCatalog();
+          });
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuBtn && mobileMenu) {
+          menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+          mobileMenu.querySelectorAll('.mobile-nav-link').forEach((link) => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+          });
+        }
+
+        // Simulation listeners
+        document.getElementById('sim-unit')?.addEventListener('change', () => {
+          syncNominalFromPercent();
+          updateSimulation();
+        });
+        document.getElementById('sim-dp-percent')?.addEventListener('input', () => {
+          syncNominalFromPercent();
+          updateSimulation();
+        });
+        document.getElementById('sim-dp-nominal')?.addEventListener('input', () => {
+          syncPercentFromNominal();
+          updateSimulation();
+        });
+        document.getElementById('sim-discount')?.addEventListener('input', () => {
+          syncNominalFromPercent();
+          updateSimulation();
+        });
+
+        // Slider navigation
+        document.getElementById('slide-prev-btn')?.addEventListener('click', () => {
+          activeSlideIndex = (activeSlideIndex - 1 + testimoniData.length) % testimoniData.length;
+          renderSlide();
+        });
+        document.getElementById('slide-next-btn')?.addEventListener('click', () => {
+          activeSlideIndex = (activeSlideIndex + 1) % testimoniData.length;
+          renderSlide();
+        });
+
+        // Slide photo upload
+        document.getElementById('slide-photo-input')?.addEventListener('change', (e) => {
+          const file = e.target.files && e.target.files[0];
+          if (!file) return;
+          const reader = new FileReader();
+          reader.onload = () => {
+            window.__slideCustomPhotos = window.__slideCustomPhotos || {};
+            window.__slideCustomPhotos[activeSlideIndex] = reader.result;
+            renderSlide();
+            showToast(`Foto slide serah terima #${activeSlideIndex + 1} diperbarui.`);
+          };
+          reader.readAsDataURL(file);
+        });
+
+        // Default tomorrow date for Test Drive form
+        const dateInput = document.getElementById('td-tanggal');
+        if (dateInput) {
+          const d = new Date();
+          d.setDate(d.getDate() + 1);
+          dateInput.value = d.toISOString().split('T')[0];
+        }
+
+        // Test Drive form submission to Kang Imam's WhatsApp
+        document.getElementById('test-drive-form')?.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const nama = document.getElementById('td-nama')?.value.trim() || '';
+          const hp = document.getElementById('td-hp')?.value.trim() || '';
+          const domisili = document.getElementById('td-domisili')?.value.trim() || '';
+          const unit = document.getElementById('td-unit')?.value || '';
+          const tanggal = document.getElementById('td-tanggal')?.value || '';
+          const jam = document.getElementById('td-jam')?.value || '';
+          const catatan = document.getElementById('td-catatan')?.value.trim() || '';
+
+          const text = [
+            'Halo Kang Imam (BYD BIPO Cimahi), saya mengisi Form Test Drive:',
+            `• Nama Peserta Test Drive: ${nama}`,
+            `• No. HP/WA Test Drive: ${hp}`,
+            `• Domisili / Lokasi Test Drive: ${domisili}`,
+            `• Unit Test Drive Pilihan: ${unit}`,
+            `• Jadwal Test Drive: ${tanggal} (${jam})`,
+            catatan ? `• Catatan Test Drive: ${catatan}` : ''
+          ].filter(Boolean).join('\n');
+
+          showToast('Form Test Drive siap dikirim. Membuka WhatsApp Kang Imam...');
+          window.open(`https://wa.me/6282315011610?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+        });
+
+        // Copy dealer address
+        document.getElementById('copy-address-btn')?.addEventListener('click', () => {
+          try {
+            const addr = 'Jl. Jend. H. Amir Machmud No. 52, Cibereum, Kec. Cimahi Selatan, Kota Cimahi, Jawa Barat 40535';
+            const tmp = document.createElement('input');
+            tmp.value = addr;
+            document.body.appendChild(tmp);
+            tmp.select();
+            document.execCommand('copy');
+            document.body.removeChild(tmp);
+            showToast('Alamat BYD BIPO Cimahi berhasil disalin.');
+          } catch (err) {
+            showToast('Silakan salin alamat langsung dari teks di atas.');
+          }
+        });
+
+        // Sales consultant Imam profile photo upload
+        document.getElementById('imam-photo-input')?.addEventListener('change', (e) => {
+          const file = e.target.files && e.target.files[0];
+          if (!file) return;
+          const reader = new FileReader();
+          reader.onload = () => {
+            const heroImg = document.getElementById('imam-profile-img');
+            const cardImg = document.getElementById('imam-card-img');
+            if (heroImg) heroImg.src = reader.result;
+            if (cardImg) cardImg.src = reader.result;
+            showToast('Foto profil Sales Konsultan Imam diperbarui.');
+          };
+          reader.readAsDataURL(file);
+        });
+
+        // Showroom photo upload & reset
+        const defaultShowroomSvg = document.getElementById('showroom-default-svg')?.outerHTML || '';
+        document.getElementById('showroom-photo-input')?.addEventListener('change', (e) => {
+          const file = e.target.files && e.target.files[0];
+          const frame = document.getElementById('showroom-photo-frame');
+          if (!file || !frame) return;
+          const reader = new FileReader();
+          reader.onload = () => {
+            frame.innerHTML = `<img src="${reader.result}" alt="Foto Showroom BYD BIPO Cimahi" onerror="this.onerror=null;this.src='https://placehold.co/720x280/F4F6F9/1E293B?text=Showroom+BYD+BIPO+Cimahi';" class="h-full w-full object-cover" />`;
+            showToast('Foto showroom BYD BIPO Cimahi berhasil ditampilkan.');
+          };
+          reader.readAsDataURL(file);
+        });
+
+        document.getElementById('showroom-photo-reset')?.addEventListener('click', () => {
+          const frame = document.getElementById('showroom-photo-frame');
+          const input = document.getElementById('showroom-photo-input');
+          if (input) input.value = '';
+          if (frame && defaultShowroomSvg) {
+            frame.innerHTML = defaultShowroomSvg;
+            showToast('Tampilan showroom dikembalikan ke ilustrasi bawaan.');
+          }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        try {
+          renderPromos();
+          renderCategoryFilters();
+          renderCatalog();
+          populateUnitSelects();
+          renderTenorButtons();
+          syncNominalFromPercent();
+          updateSimulation();
+          renderSlide();
+          initEvents();
+        } catch (err) {
+          showToast('Terjadi kendala memuat tampilan. Silakan muat ulang halaman.');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
